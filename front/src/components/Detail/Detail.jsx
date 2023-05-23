@@ -10,7 +10,7 @@ export default function Detail() {
   console.log(useParams);
 
   useEffect(() => {
-    fetch(`http://localhost:3001/rickandmorty/detail/${detailId}`)
+    fetch(`rickandmorty/detail/${detailId}`)
       .then((response) => response.json())
       .then((char) => {
         if (char.name) {

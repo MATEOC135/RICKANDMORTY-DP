@@ -6,6 +6,8 @@ import { Routes, Route, useLocation } from "react-router-dom"
 import About from './components/About/about'
 import Detail from './components/Detail/Detail'
 import Form from "./components/Form/Form"
+import axios from "axios"
+ 
 
 import { useNavigate } from 'react-router-dom'
 import Favorites from './components/favorites/favorites'
@@ -13,6 +15,7 @@ import Favorites from './components/favorites/favorites'
 
 function App() {
   const location = useLocation();
+  axios.defaults.baseURL ="http://localhost:3001/"  
 
 
   const navigate = useNavigate();
@@ -47,17 +50,22 @@ function App() {
 
 
   function onSearch(character) {
-    fetch(`http://localhost:3001/rickandmorty/onSearch/${character}`)
-
-      .then((response) => response.json())
-      .then((data) => {
+    axios.get(`rickandmorty/onSearch/${character}`)
+      .then((response) => {
+        const data = response.data;
         if (data.name) {
-          characters.find((element) => element.id === data.id) === undefined
-            ? setCharacters((characters) => [...characters, data])
-            : alert("personaje repetido,pruebacon otro id")
+          const isCharacterRepeated = characters.find((element) => element.id === data.id);
+          if (isCharacterRepeated === undefined) {
+            setCharacters((characters) => [...characters, data]);
+          } else {
+            alert("Personaje repetido, prueba con otro ID.");
+          }
         } else {
-          window.alert('No hay personajes con ese ID');
+          window.alert('No hay personajes con ese ID.');
         }
+      })
+      .catch((error) => {
+        console.error('Error en la solicitud:', error);
       });
   }
 
