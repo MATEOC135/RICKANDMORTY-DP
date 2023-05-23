@@ -1,0 +1,17 @@
+.App {
+   text-align: center;
+  
+}
+body{
+  
+   display: fit-content ;
+   width: 100%;
+   height: 100vh;
+   justify-content:center ;
+   align-items: center;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: fixed;
+   background-size: cover;
+   background-image: url("https://images3.alphacoders.com/812/thumbbig-812062.webp");
+}

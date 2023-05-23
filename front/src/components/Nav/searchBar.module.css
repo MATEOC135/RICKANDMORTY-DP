@@ -1,0 +1,18 @@
+.input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  .button {
+    background-color: blueviolet;
+    padding:10px 35px 10px 35px ;
+    border-radius: 5px;
+    font-Weight: bold;
+    font-Size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: solid rgb(135, 9, 194) 1px;
+    opacity: 100%;
+    
+  }

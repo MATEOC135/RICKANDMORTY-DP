@@ -1,0 +1,20 @@
+.div{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.select {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: solid rgb(135, 9, 194) 1px;
+    margin:10px;
+  }
+.option {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+  }

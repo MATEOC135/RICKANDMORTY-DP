@@ -1,0 +1,87 @@
+.divC{display: flex;
+    align-items: center;
+    padding-left: 450px;
+
+}
+
+.img1{
+    width: 233px;
+    
+    margin-top:210px ;
+    border-radius: 10px;
+    
+}
+.dform{
+    
+    color: rgb(255, 255, 255) ;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+  
+    margin-top:210px ;
+   
+    border-radius: 10px;
+    background-color: none;
+    width: 600px ;
+    border:solid rgb(224, 224, 224) 1px;
+    opacity: 80%;
+    height:423px ;
+} 
+.dform input{
+    border-color: aliceblue;
+    width: 100%;
+    padding:8px;
+    height: 100%;
+    background: none;
+    border-radius: 15px;
+    font-size: 20px;
+    color: azure;
+   
+    
+
+}
+
+.dform label{
+    font-size: 40px;
+    padding: 0px;
+
+}
+
+.boton{
+    margin-top: 35px;
+    border-radius: 10px;
+    
+    padding: 12px;
+    text-align: center;
+    width: 50%;
+    height:50px ;
+    background: none;
+
+    color: rgb(255, 255, 255) ;
+    font-size: 25px;
+
+}
+.boton:hover{
+    color: black;
+}
+
+
+.warning{
+    
+    outline: none ;
+    border:solid red 1px !important;
+    border-radius: 0.2cm ;
+    color: rgb(245, 241, 241);
+}
+
+.danger{
+    
+    outline: none ;
+    font-size: 10px;
+    color: rgb(255, 0, 0);
+    margin-left: 10cm;
+}
+
+

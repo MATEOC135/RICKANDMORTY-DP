@@ -1,0 +1,14 @@
+.divcontainer{
+
+
+display: grid;
+background-color: blueviolet;
+border-radius: 15px;
+color: white;
+overflow: hidden;
+margin: 25px 25px 25px 25px;}
+
+
+.title{
+font-family:  sans-serif;
+}

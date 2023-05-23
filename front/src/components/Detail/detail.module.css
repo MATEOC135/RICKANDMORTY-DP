@@ -1,0 +1,21 @@
+.characterContainer {
+    display: inline-block;
+  
+  grid-gap: 20px;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.characterImage {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.characterInfo {
+  display: flex;
+  flex-direction: column;
+}
